@@ -499,7 +499,7 @@
   position: absolute;
   width: 375px;
   height: 1125.15px;
-  left: calc(30% - 375px / 2);
+  left: calc(50% - 375px / 2);
   top: 2800px;
   flex: none;
   order: 0;
