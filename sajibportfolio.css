@@ -12,7 +12,7 @@
   gap: 12px;
   width: 327px;
   height: 700px;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   flex: none;
@@ -29,7 +29,7 @@
   gap: 12px;
   width: 327px;
   height: 700px;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   flex: none;
@@ -46,7 +46,7 @@
   gap: 12px;
   width: 327px;
   height: 700px;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   flex: none;
@@ -63,7 +63,7 @@
   gap: 12px;
   width: 327px;
   height: 700px;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   flex: none;
@@ -115,7 +115,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
+  padding: 0;
   gap: 12px;
   width: 295px;
   height: 332px;
@@ -128,7 +128,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
+  padding: 0;
   gap: 12px;
   width: 295px;
 
@@ -140,7 +140,7 @@
 .prt2 {
   width: 295px;
   height: 80px;
-  font-family: "Poppins";
+  font-family:  Poppins,sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -160,7 +160,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   gap: 12px;
   width: 236px;
   height: 32px;
@@ -173,7 +173,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 8px 0px;
+  padding: 8px 0;
   width: 55px;
   height: 32px;
   flex: none;
@@ -184,7 +184,7 @@
 .tlt {
   width: 55px;
   height: 16px;
-  font-family: "Poppins";
+  font-family:  Poppins,sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -199,7 +199,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 8px 0px;
+  padding: 8px 0;
   width: 89px;
   height: 32px;
   flex: none;
@@ -210,7 +210,7 @@
 .jtt {
   width: 89px;
   height: 16px;
-  font-family: "Poppins";
+  font-family:  Poppins,sans-serif;
   font-style: normal;
   font-weight: 200;
   font-size: 13px;
@@ -225,7 +225,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 8px 0px;
+  padding: 8px 0;
   width: 29px;
   height: 32px;
   flex: none;
@@ -236,7 +236,7 @@
 .yrt {
   width: 29px;
   height: 16px;
-  font-family: "Poppins";
+  font-family:  Poppins,sans-serif;
   font-style: normal;
   font-weight: 200;
   font-size: 13px;
@@ -270,7 +270,7 @@
 .jhora {
   width: 295px;
   height: 76px;
-  font-family: "Poppins";
+  font-family:  Poppins,sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -285,7 +285,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   gap: 8px;
   width: 203px;
   height: 24px;
@@ -311,7 +311,7 @@
 .lp1 {
   width: 29px;
   height: 16px;
-  font-family: "Poppins";
+  font-family:  Poppins,sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -340,7 +340,7 @@
 .lp2 {
   width: 21px;
   height: 16px;
-  font-family: "Poppins";
+  font-family:  Poppins,sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -369,7 +369,7 @@
 .lp3 {
   width: 65px;
   height: 16px;
-  font-family: "Poppins";
+  font-family:  Poppins,sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -398,7 +398,7 @@
   gap: 10px;
   width: 124px;
   height: 48px;
-  left: 0px;
+  left: 0;
   top: calc(50% - 48px / 2);
   border: 1px solid #6070ff;
   border-radius: 8px;
@@ -407,7 +407,7 @@
 .btt {
   width: 100px;
   height: 24px;
-  font-family: "Poppins";
+  font-family:  Poppins,sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -424,7 +424,7 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 0px;
+  padding: 0;
   width: 500px;
   height: 80px;
   flex: none;
@@ -450,7 +450,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   gap: 8px;
   width: 240px;
   height: 24px;
@@ -482,7 +482,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   gap: 8px;
   width: 240px;
   height: 24px;
@@ -511,7 +511,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
+  padding: 0;
   gap: 12px;
   width: 327px;
   height: 409px;
@@ -523,7 +523,7 @@
 .pta1 {
   width: 327px;
   height: 101px;
-  font-family: "Poppins";
+  font-family:  Poppins,sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -539,7 +539,7 @@
 .pt2 {
   width: 327px;
   height: 144px;
-  font-family: "Poppins";
+  font-family:  Poppins,sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -554,7 +554,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
+  padding: 0;
   gap: 16px;
   width: 200px;
   height: 80px;
@@ -567,7 +567,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   gap: 8px;
   width: 117px;
   height: 24px;
@@ -579,7 +579,7 @@
 .stt {
   width: 117px;
   height: 24px;
-  font-family: "Poppins";
+  font-family:  Poppins,sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -594,7 +594,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
+  padding: 0;
   width: 200px;
   height: 40px;
   flex: none;
@@ -634,7 +634,7 @@
 .brt {
   width: 138px;
   height: 24px;
-  font-family: "Poppins";
+  font-family: Poppins,sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -652,7 +652,7 @@
 .ss {
   display: flex;
   flex-direction: column;
-  padding: 0px;
+  padding: 0;
   width: 327px;
   height: 464.15px;
   list-style-type: none;
@@ -662,7 +662,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
+  padding: 0;
   width: 327px;
   height: 320.15px;
   flex: none;
@@ -700,7 +700,7 @@
   left: 12px;
   right: 78px;
   top: calc(50% - 24px / 2);
-  font-family: "Poppins";
+  font-family:  Poppins,sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -804,7 +804,7 @@
   left: 76px;
   right: 12px;
   top: calc(50% - 24px / 2 - 0.36px);
-  font-family: "Poppins";
+  font-family:  Poppins,sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
@@ -821,7 +821,7 @@
   left: 40px;
   top: calc(50% - 48px / 2 - 0.36px);
   background: url(statics/images/java.png);
-  border: 1px solid #ffffff;
+  border: 1px solid #fff;
 }
 
 .nbs1 {
