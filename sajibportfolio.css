@@ -535,20 +535,6 @@
   flex-grow: 0;
 }
 
-.pt2 {
-  width: 327px;
-  height: 144px;
-  font-family: Poppins, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  color: #344563;
-  flex: none;
-  order: 1;
-  flex-grow: 0;
-}
-
 .smd {
   display: flex;
   flex-direction: column;
