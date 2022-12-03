@@ -131,7 +131,6 @@
   padding: 0;
   gap: 12px;
   width: 295px;
-
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -140,7 +139,7 @@
 .prt2 {
   width: 295px;
   height: 80px;
-  font-family:  Poppins,sans-serif;
+  font-family: Poppins,sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
@@ -184,7 +183,7 @@
 .tlt {
   width: 55px;
   height: 16px;
-  font-family:  Poppins,sans-serif;
+  font-family: Poppins,sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -210,7 +209,7 @@
 .jtt {
   width: 89px;
   height: 16px;
-  font-family:  Poppins,sans-serif;
+  font-family: Poppins,sans-serif;
   font-style: normal;
   font-weight: 200;
   font-size: 13px;
@@ -236,7 +235,7 @@
 .yrt {
   width: 29px;
   height: 16px;
-  font-family:  Poppins,sans-serif;
+  font-family: Poppins,sans-serif;
   font-style: normal;
   font-weight: 200;
   font-size: 13px;
@@ -270,7 +269,7 @@
 .jhora {
   width: 295px;
   height: 76px;
-  font-family:  Poppins,sans-serif;
+  font-family: Poppins,sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -311,7 +310,7 @@
 .lp1 {
   width: 29px;
   height: 16px;
-  font-family:  Poppins,sans-serif;
+  font-family: Poppins,sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -340,7 +339,7 @@
 .lp2 {
   width: 21px;
   height: 16px;
-  font-family:  Poppins,sans-serif;
+  font-family: Poppins,sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -369,7 +368,7 @@
 .lp3 {
   width: 65px;
   height: 16px;
-  font-family:  Poppins,sans-serif;
+  font-family: Poppins,sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -407,7 +406,7 @@
 .btt {
   width: 100px;
   height: 24px;
-  font-family:  Poppins,sans-serif;
+  font-family: Poppins,sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -523,7 +522,7 @@
 .pta1 {
   width: 327px;
   height: 101px;
-  font-family:  Poppins,sans-serif;
+  font-family: Poppins,sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -539,7 +538,7 @@
 .pt2 {
   width: 327px;
   height: 144px;
-  font-family:  Poppins,sans-serif;
+  font-family: Poppins,sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -579,7 +578,7 @@
 .stt {
   width: 117px;
   height: 24px;
-  font-family:  Poppins,sans-serif;
+  font-family: Poppins,sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -700,7 +699,7 @@
   left: 12px;
   right: 78px;
   top: calc(50% - 24px / 2);
-  font-family:  Poppins,sans-serif;
+  font-family: Poppins,sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -804,7 +803,7 @@
   left: 76px;
   right: 12px;
   top: calc(50% - 24px / 2 - 0.36px);
-  font-family:  Poppins,sans-serif;
+  font-family: Poppins,sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
