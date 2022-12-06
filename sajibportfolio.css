@@ -276,9 +276,12 @@
 
 .form-section {
   background-image: url("statics/images//statics/e1.svg"),
-    url("statics/images/r1.svg"), url("statics/images/e2.svg"),
-    url("statics/images/r2.svg"), url("statics/images/e3.svg"),
-    url("statics/images/r3.svg"), url("statics/images/e4.svg"),
+    url("statics/images/r1.svg"), 
+    url("statics/images/e2.svg"),
+    url("statics/images/r2.svg"), 
+    url("statics/images/e3.svg"),
+    url("statics/images/r3.svg"), 
+    url("statics/images/e4.svg"),
     url("statics/images/e5.svg"),
     url("statics/images/contact-form-\ background.svg");
   background-repeat: no-repeat;
@@ -298,7 +301,7 @@
 }
 
 .contact-title {
-  font-family: "Poppins";
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -306,14 +309,14 @@
   display: flex;
   align-items: center;
   text-align: center;
-  color: #ffffff;
+  color: #fff;
 }
 
 .contact-desc {
   width: 327px;
   height: 102px;
   left: 24px;
-  font-family: "Poppins";
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -340,7 +343,7 @@ input::placeholder {
 }
 
 textarea::placeholder {
-  font-family: "Poppins";
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -363,11 +366,6 @@ button {
   border: 1px solid #7f8cff;
   transition: 0.4s all;
   border-radius: 10px;
-}
-
-.form-container button:hover {
-  color: #fff;
-  background-color: #6070ff;
 }
 
 button:active {
@@ -394,12 +392,17 @@ button:disabled {
   border-radius: 8px;
 }
 
+.form-container button:hover {
+  color: #fff;
+  background-color: #6070ff;
+}
+
 input {
-  left: 0px;
-  right: 0px;
-  top: 0px;
+  left: 0;
+  right: 0;
+  top: 0;
   bottom: 0px;
-  background: #ffffff;
+  background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   width: 300px;
