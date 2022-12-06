@@ -285,13 +285,16 @@
   background-position: 5.2% 44%, 5.83% 40.07%, 87% 14.06%, 84.16% 8%,
     24.86% 90.19%, 23.4% 87.58%, 36.4% 13.47%, 78.4% 61.58%, 0;
   background-size: auto, auto, auto, auto, auto, auto, auto, auto, cover;
+  height:779px;
 }
 
 .wrap {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
   margin-top: 100px;
+  height:779px;
 }
 
 .contact-title {
@@ -322,12 +325,48 @@
 .form-container {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  height: 330px;
 }
 
-.input::placeholder {
+input::placeholder {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 17px;
   line-height: 20px;
+}
+
+button {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  color: #7f8Cff;
+  background-color: #fff; 
+  padding: 12px 12px 12px 12px;
+  border: 1px solid #7f8Cff;
+  transition: 0.4s all;
+  border-radius: 10px;
+
+}
+
+.form-container button:hover {
+  color: #fff;
+  background-color: #6070ff;
+}
+
+button:active {
+  color: #fff;
+  background-color: #2230d2;
+}
+
+button:disabled {
+  background-color: #f4f1f0;
+  color: #c1c7d0;
+  border: 1px solid #c1c7d0;
+}
+
+.form-container button {
+  align-self: flex-start;
 }
