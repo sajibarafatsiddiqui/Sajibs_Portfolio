@@ -276,17 +276,24 @@
 
 .form-section {
   background-image: url("statics/images//statics/e1.svg"),
-    url("statics/images/r1.svg"), 
+    url("statics/images/r1.svg"),
     url("statics/images/e2.svg"),
-    url("statics/images/r2.svg"), 
+    url("statics/images/r2.svg"),
     url("statics/images/e3.svg"),
-    url("statics/images/r3.svg"), 
+    url("statics/images/r3.svg"),
     url("statics/images/e4.svg"),
     url("statics/images/e5.svg"),
     url("statics/images/contact-form-\ background.svg");
   background-repeat: no-repeat;
-  background-position: 5.2% 44%, 5.83% 40.07%, 90% 18.06%, 84.16% 8%,
-    24.86% 90.19%, 23.4% 87.58%, 36.4% 13.47%, 78.4% 61.58%, 0;
+  background-position: 5.2% 44%,
+  5.83% 40.07%,
+  90% 18.06%,
+  84.16% 8%,
+  24.86% 90.19%,
+  23.4% 87.58%,
+  36.4% 13.47%,
+  78.4% 61.58%,
+  0;
   background-size: auto, auto, auto, auto, auto, auto, auto, auto, cover;
   height: 779px;
 }
@@ -388,7 +395,7 @@ button:disabled {
   width: 140px;
   height: 48px;
   left: 24px;
-  background: #ffffff;
+  background: #fff;
   border-radius: 8px;
 }
 
@@ -401,7 +408,7 @@ input {
   left: 0;
   right: 0;
   top: 0;
-  bottom: 0px;
+  bottom: 0;
   background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
