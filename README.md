@@ -24,7 +24,7 @@
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to my project.
+>The tech stack I used in my project:
 
 <details>
   <summary>Client</summary>
@@ -40,7 +40,7 @@
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
+> Key features of the application.
 
 - **[key_feature_1]** Used HTML & CSS Linters
 - **[key_feature_2]** Parse figma Mobile Main Template 1
