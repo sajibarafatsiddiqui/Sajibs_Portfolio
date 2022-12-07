@@ -4,6 +4,12 @@ body {
   margin: 0;
 }
 
+p:hover {
+  text-decoration: underline;
+  text-decoration-color: #396df2;
+  text-decoration-thickness: 2px;
+}
+
 .home-page {
   display: flex;
   flex-direction: column;
@@ -998,12 +1004,6 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
-}
-
-p:hover {
-  text-decoration: underline;
-  text-decoration-color: #396df2;
-  text-decoration-thickness: 2px;
 }
 
 #profile_link {
