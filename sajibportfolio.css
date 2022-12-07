@@ -3,9 +3,19 @@ body {
   margin: 0;
 }
 
-.portfolio {
+.home-page {
   display: flex;
-  min-height: 500px;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 114px 24px;
+  gap: 12px;
+  position: absolute;
+  width: 375px;
+  height: 420px;
+  left: calc(50% - 375px / 2);
+  top: 92px;
+  background-color: #fff;
+  border-radius: 0 0 0 5%;
 }
 
 .toolbar {
@@ -41,6 +51,30 @@ body {
   color: #6070ff;
 }
 
+.hd3 {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.contact ul {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  margin-left: 24px;
+}
+
+.icon_home {
+  list-style-type: none;
+  margin-right: 20px;
+}
+
 .icon {
   top: 0;
   bottom: 0;
@@ -59,8 +93,20 @@ body {
 }
 
 #home_presentation {
-  background-image: url("../statics/images/Ellipse 11.png"), url("../statics/images/Rectangle 4.png"), url("../statics/images/Ellipse\ 3.png"), url("../statics/images/Ellipse\ 8.png"), url("../statics/images/Ellipse\ 5.png"), url("../statics/images/Rectangle\ 7.png"), url("../statics/images/Ellipse 12.png"), url("../statics/images/Ellipse 4.png"), url("../statics/images/Rectangle\ 5.png"), url("../statics/images/Ellipse\ 13.png"), url("../statics/images/Ellipse\ 15.png");
-  background-position: 19px 79px, 294px 68px, 323px 102px, 214px 110px, 125px 106px, 127px 98px, 370px 385px, 290px 509px, 240px 507px, 357px 392px, 106px 497px;
+  background-image: url('../statics/images/Ellipse 11.png'),
+    url('../statics/images/Rectangle 4.png'),
+    url('../statics/images/Ellipse\ 3.png'),
+    url('../statics/images/Ellipse\ 8.png'),
+    url('../statics/images/Ellipse\ 5.png'),
+    url('../statics/images/Rectangle\ 7.png'),
+    url('../statics/images/Ellipse 12.png'),
+    url('../statics/images/Ellipse 4.png'),
+    url('../statics/images/Rectangle\ 5.png'),
+    url('../statics/images/Ellipse\ 13.png'),
+    url('../statics/images/Ellipse\ 15.png');
+  background-position: 19px 79px, 294px 68px, 323px 102px, 214px 110px,
+    125px 106px, 127px 98px, 370px 385px, 290px 509px, 240px 507px, 357px 392px,
+    106px 497px;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -72,8 +118,7 @@ body {
 }
 
 .short-presentation {
-  width: 100%;
-  padding: 0 10px;
+  padding: 0 15px;
   height: 150px;
   font-family: Poppins, sans-serif;
   font-style: normal;
@@ -81,7 +126,6 @@ body {
   font-size: 50px;
   line-height: 52px;
   display: flex;
-  text-align: center;
   align-items: center;
   color: #172b4d;
   flex: none;
@@ -107,12 +151,8 @@ body {
   height: 650px;
 }
 
-works {
-  grid-template-rows: 25% 25% 25% 25%;
-  height: 650px;
-}
-
 .mwp1 {
+  grid-row: 1 / 1 span;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -127,6 +167,7 @@ works {
   flex: none;
   order: 1;
   flex-grow: 0;
+  top: 500px;
 }
 
 .mwp2 {
@@ -1010,27 +1051,15 @@ p:hover {
 }
 
 .form-section {
-  background-image:
-    url("statics/images//statics/e1.svg"),
-    url("statics/images/r1.svg"),
-    url("statics/images/e2.svg"),
-    url("statics/images/r2.svg"),
-    url("statics/images/e3.svg"),
-    url("statics/images/r3.svg"),
-    url("statics/images/e4.svg"),
-    url("statics/images/e5.svg"),
-    url("statics/images/contact-form-\ background.svg");
+  background-image: url('statics/images//statics/e1.svg'),
+    url('statics/images/r1.svg'), url('statics/images/e2.svg'),
+    url('statics/images/r2.svg'), url('statics/images/e3.svg'),
+    url('statics/images/r3.svg'), url('statics/images/e4.svg'),
+    url('statics/images/e5.svg'),
+    url('statics/images/contact-form-\ background.svg');
   background-repeat: no-repeat;
-  background-position:
-    5.2% 44%,
-    5.83% 40.07%,
-    90% 18.06%,
-    84.16% 8%,
-    24.86% 90.19%,
-    23.4% 87.58%,
-    36.4% 13.47%,
-    78.4% 61.58%,
-    0;
+  background-position: 5.2% 44%, 5.83% 40.07%, 90% 18.06%, 84.16% 8%,
+    24.86% 90.19%, 23.4% 87.58%, 36.4% 13.47%, 78.4% 61.58%, 0;
   background-size: auto, auto, auto, auto, auto, auto, auto, auto, cover;
   height: 779px;
 }
@@ -1100,7 +1129,7 @@ textarea::placeholder {
 }
 
 button {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
