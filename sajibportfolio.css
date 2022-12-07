@@ -1,5 +1,6 @@
 body {
-  background-color: #f2f2f8;
+  max-width: 375px;
+  background: #fff;
   margin: 0;
 }
 
@@ -151,12 +152,10 @@ body {
   padding: 114px 24px;
   gap: 88px;
   width: 375px;
-  height: 2788px;
+  height: 3800px;
   position: absolute;
   top: 550px;
   left: calc(50% - 375px / 2);
-  background: #FFFFFF;
-  border: 1px solid #DFE1E6;
   border-radius: 16px;
   flex: none;
   order: 0;
@@ -169,9 +168,9 @@ body {
   flex-direction: column;
   box-sizing: border-box;
   align-items: center;
-  padding: 114px 24px;
+  padding: 16px;
   gap: 88px;
-  height: 2788px;
+  height: 800px;
   left: 0px;
   background: #fff;
   border: 1px solid #dfe1e6;
@@ -188,9 +187,8 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 16px;
-  gap: 12px;
-  width: 327px;
-  height: 700px;
+  gap: 88px;
+  height: 800px;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -206,9 +204,8 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 16px;
-  gap: 12px;
-  width: 327px;
-  height: 700px;
+  gap: 88px;
+  height: 800px;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -224,9 +221,8 @@ body {
   flex-direction: column;
   align-items: center;
   padding: 16px;
-  gap: 12px;
-  width: 327px;
-  height: 700px;
+  gap: 88px;
+  height: 800px;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -661,13 +657,13 @@ body {
   padding: 114px 24px;
   gap: 24px;
   position: absolute;
-  width: 375px;
   height: 1125.15px;
   left: calc(50% - 375px / 2);
   top: 2800px;
   flex: none;
   order: 0;
   flex-grow: 0;
+  top: 4506px;
 }
 
 .top {
@@ -1075,32 +1071,34 @@ p:hover {
   background-position: 5.2% 44%, 5.83% 40.07%, 90% 18.06%, 84.16% 8%,
     24.86% 90.19%, 23.4% 87.58%, 36.4% 13.47%, 78.4% 61.58%, 0;
   background-size: auto, auto, auto, auto, auto, auto, auto, auto, cover;
-  height: 779px;
-}
-
-.wrap {
+  position: absolute;
+  width: 375px;
+  height: 689px;
+  left: -33px;
+  margin-top: 100px;
+  top: 5579px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
-  margin-top: 100px;
-  height: 779px;
+  left: calc(50% - 375px / 2);
 }
 
 .contact-title {
+  display: flex;
+  flex-direction: column;
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
-  display: flex;
   align-items: center;
   text-align: center;
   color: #fff;
 }
 
 .contact-desc {
-  width: 327px;
+  display: flex;
+  flex-direction: column;
   height: 102px;
   left: 24px;
   font-family: Poppins, sans-serif;
@@ -1115,7 +1113,7 @@ p:hover {
 .form-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
   height: 330px;
 }
 
