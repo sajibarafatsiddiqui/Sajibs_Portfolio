@@ -52,7 +52,7 @@ body {
 }
 
 .hd3 {
-  font-family: 'Poppins';
+  font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
@@ -148,29 +148,41 @@ body {
 #works {
   display: grid;
   grid-template-rows: 25% 25% 25% 25%;
-  height: 650px;
+  padding: 114px 24px;
+  gap: 88px;
+  width: 375px;
+  height: 2788px;
+  position: absolute;
+  top: 550px;
+  left: calc(50% - 375px / 2);
+  background: #FFFFFF;
+  border: 1px solid #DFE1E6;
+  border-radius: 16px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
 }
 
 .mwp1 {
   grid-row: 1 / 1 span;
-  box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
   align-items: center;
-  padding: 16px;
-  gap: 12px;
-  width: 327px;
-  height: 700px;
+  padding: 114px 24px;
+  gap: 88px;
+  height: 2788px;
+  left: 0px;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   flex: none;
   order: 1;
   flex-grow: 0;
-  top: 500px;
 }
 
 .mwp2 {
+  grid-row: 2 / 1 span;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -188,6 +200,7 @@ body {
 }
 
 .mwp3 {
+  grid-row: 3 / 1 span;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
@@ -205,6 +218,7 @@ body {
 }
 
 .mwp4 {
+  grid-row: 4 / 1 span;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
