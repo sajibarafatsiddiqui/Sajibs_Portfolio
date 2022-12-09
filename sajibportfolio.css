@@ -267,7 +267,7 @@ p:hover {
   flex: none;
   order: 0;
   flex-grow: 0;
-  background: url(/statics/images/Snapshoot_Portfolio2.png);
+  background: url(/statics/images/Snapshoot_Portfolio3.png);
 }
 
 .sp4 {
@@ -1229,25 +1229,18 @@ button:disabled {
 
 
   .toolbar {
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #18a0fa;
-    width: 100%
+    justify-content: space-around;
+    width: 100%;
+    justify-self: end;
   }
 
   .mylogo {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    align-items: center;
-    margin-left: 10%;
     font-family: Poppins, sans-serif;
     font-weight: bold;
     font-size: 18px;
     text-decoration: none;
+    margin-top: 10px;
+    
 
   }
 
@@ -1279,8 +1272,10 @@ button:disabled {
     flex-direction: column;
     align-items: flex-start;
     padding: 24px;
-    height: 420px;
+    height: 500px;
     border-radius: 0 0 0 5%;
+    gap: 20px;
+    padding-top: 0;
   }
 
   #home_presentation {
@@ -1315,15 +1310,15 @@ button:disabled {
   #works {
     display: grid;
     grid-template-rows: 25% 25% 25% 25%;
-
     width: 96%;
     padding: 114px 12px;
     margin-left: -420px;
     gap: 40px;
-    height: 2500px;
+    height: 2200px;
     position: absolute;
     border-radius: 16px;
     grid-row-gap: 20px;
+
   }
 
   .mwp1 {
@@ -1360,6 +1355,7 @@ button:disabled {
     border: 1px solid #dfe1e6;
     border-radius: 16px;
     margin-left: 10%;
+    margin-bottom: 0;
     grid-column-gap: 20px;
 
   }
@@ -1385,16 +1381,18 @@ button:disabled {
     grid-row: 4 / 1 span;
     display: grid;
     grid-template-columns: 50% 50%;
+    grid-template-rows: max-content;
     box-sizing: border-box;
     align-items: center;
     padding: 16px;
     gap: 10px;
-    height: 800px;
+    height: 550px;
     background: #fff;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
     width: 80%;
     margin-left: 10%;
+    margin-top: 0;
     grid-column-gap: 20px;
   }
 
@@ -1404,23 +1402,60 @@ button:disabled {
     display: grid;
     height: 500px;
     border-radius: 8px;
-    background: url(/statics/images/Snapshoot_Portfolio.png);
+    background: url(statics/images/Snapshoot_Portfolio.png);
     background-size: 80%;
     background-repeat: no-repeat;
     left: 24px;
     background-position: 10% 50%;
-    background-color: #396df2;
+
   }
 
-  .lb2 {
-    background-color: #2230d2;
+  .sp2 {
+    grid-column: 1 / 1 span;
+    width: 500px;
+    display: grid;
+    height: 500px;
+    border-radius: 8px;
+    background: url(statics/images/Snapshoot_Portfolio1.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    left: 24px;
+    background-position: 10% 50%;
+  }
+
+  .sp3 {
+    grid-column: 1 / 1 span;
+    width: 500px;
+    display: grid;
+    height: 500px;
+    border-radius: 8px;
+    background: url(/statics/images/Snapshoot_Portfolio2.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    left: 24px;
+    background-position: 10% 50%;
+
+  }
+
+  .sp4 {
+    grid-column: 1 / 1 span;
+    width: 500px;
+    display: grid;
+    height: 500px;
+    border-radius: 8px;
+    background: url(/statics/images/Snapshoot_Portfolio3.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    left: 24px;
+    background-position: 10% 50%;
+
   }
 
   #about_me {
     background-color: #fff;
     border-radius: 7.5%;
     position: absolute;
-    top: 3500px;
+    top: 3000px;
     left: -0.5px;
     right: 45px;
     bottom: 0;
@@ -1448,6 +1483,27 @@ button:disabled {
     flex-grow: 0;
   }
 
+  .pt2 {
+    width: 400px;
+    margin: 0;
+  }
+
+  .prt {
+    width: 400px;
+    margin: 0;
+  }
+
+  .prt2 {
+    width: 400px;
+    margin: 0;
+  }
+
+  .jhora {
+    width: 400px;
+    margin: 0;
+    height: 60px;
+  }
+
   .top h2 {
     margin-bottom: 0;
   }
@@ -1464,10 +1520,72 @@ button:disabled {
     margin-bottom: 0;
   }
 
-  .ss .programmes ul {
+  .programmes ul {
     display: flex;
     justify-content: space-between;
     margin-right: 0;
+
+  }
+
+  .pro {
+    display: flex;
+    flex-direction: column;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    background-color: #dfe1e6;
+    margin: 2px;
+    padding: 5px;
+    border-radius: 10px;
+    align-items: center;
+  }
+
+  .stt {
+    width: 157px;
+    height: 24px;
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7f8cff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .form-section {
+    background-image:
+      url('statics/images//statics/e1.svg'),
+      url('statics/images/r1.svg'),
+      url('statics/images/e2.svg'),
+      url('statics/images/r2.svg'),
+      url('statics/images/e3.svg'),
+      url('statics/images/r3.svg'),
+      url('statics/images/e4.svg'),
+      url('statics/images/e5.svg'),
+      url('statics/images/contact-form-\ background.svg');
+    background-repeat: no-repeat;
+    background-position:
+      5.2% 44%,
+      5.83% 40.07%,
+      120% 8.06%,
+      100.16% 8%,
+      24.86% 90.19%,
+      23.4% 87.58%,
+      36.4% 13.47%,
+      78.4% 61.58%,
+      0;
+    background-size: auto, auto, 90px 89px, auto, auto, auto, auto, auto, cover;
+    width: 100%;
+    height: 689px;
+    margin: 0;
+    top: 3700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 0;
+
   }
 
 }
