@@ -1,6 +1,11 @@
 body {
   background-color: #f7f7f9;
+  font-family: Poppins, sans-serif;
   margin: 0;
+}
+
+button {
+  text-decoration: none !important;
 }
 
 .nav_link {
@@ -21,6 +26,7 @@ p:hover {
   height: 620px;
   background-color: #fff;
   border-radius: 0 0 0 5%;
+
 }
 
 .toolbar {
@@ -764,6 +770,10 @@ p:hover {
   flex-grow: 0;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 .rsm {
   box-sizing: border-box;
   display: flex;
@@ -1247,6 +1257,11 @@ button:disabled {
     min-width: 190px;
   }
 
+  #nav {
+    display: flex;
+    justify-content: space-around;
+  }
+
   #nav .nav_link li {
     list-style: none;
   }
@@ -1261,14 +1276,14 @@ button:disabled {
   }
 
   .home-page {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding: 24px;
     height: 500px;
     border-radius: 0 0 0 5%;
     gap: 20px;
-    padding-top: 0;
+    padding-top: 30px;
   }
 
   #home_presentation {
@@ -1325,7 +1340,7 @@ button:disabled {
     left: 0;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
-    width: 80%;
+    width: 100%;
     margin-left: 10%;
     grid-column-gap: 10px;
   }
@@ -1338,7 +1353,7 @@ button:disabled {
     align-items: center;
     left: 0;
     gap: 40px;
-    width: 80%;
+    width: 100%;
     height: 550px;
     background: #fff;
     border: 1px solid #dfe1e6;
@@ -1360,7 +1375,7 @@ button:disabled {
     background: #fff;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
-    width: 80%;
+    width: 100%;
     margin-left: 10%;
     grid-column-gap: 20px;
   }
@@ -1378,7 +1393,7 @@ button:disabled {
     background: #fff;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
-    width: 80%;
+    width: 100%;
     margin-left: 10%;
     margin-top: 0;
     grid-column-gap: 20px;
@@ -1452,6 +1467,7 @@ button:disabled {
     grid-row-start: initial;
     grid-template-columns: 40% 60%;
     grid-template-rows: max-content;
+    font-family: Poppins, sans-serif;
   }
 
   .top {
@@ -1508,6 +1524,10 @@ button:disabled {
     display: flex;
     justify-content: space-between;
     margin-right: 0;
+  }
+
+  button {
+    text-decoration: none !important;
   }
 
   .pro {
