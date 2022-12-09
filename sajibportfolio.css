@@ -1417,11 +1417,35 @@ button:disabled {
   }
 
   #about_me {
+    background-color: #fff;
+    border-radius: 7.5%;
+    position: absolute;
+    top: 3500px;
+    left: -0.5px;
+    right: 45px;
+    bottom: 0;
+    padding-right: 60px;
+    margin-top: 0;
+    place-items: center;
+    width: 93%;
     display: grid;
+    grid-row-start: initial;
     grid-template-columns: 40% 60%;
-    margin: 0 8% 10%;
-    grid-column-gap: 5%;
-    background-color: #18a0fa;
+    grid-template-rows: max-content;
+
+  }
+
+  .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 0;
+    margin-bottom: 100px;
+    width: 327px;
+    height: 409px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
   }
 
   .top h2 {
@@ -1439,4 +1463,11 @@ button:disabled {
   .pta2 {
     margin-bottom: 0;
   }
+
+  .ss .programmes ul {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0;
+  }
+
 }
