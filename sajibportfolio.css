@@ -287,7 +287,6 @@ p:hover {
   padding: 0;
   gap: 12px;
   width: 295px;
-
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -1317,8 +1316,8 @@ button:disabled {
     display: grid;
     grid-template-rows: 25% 25% 25% 25%;
 
-    width: 100%;
-    padding: 114px 24px;
+    width: 96%;
+    padding: 114px 12px;
     margin-left: -420px;
     gap: 40px;
     height: 2500px;
@@ -1341,7 +1340,7 @@ button:disabled {
     border-radius: 16px;
     width: 80%;
     margin-left: 10%;
-    grid-column-gap: 20px;
+    grid-column-gap: 10px;
 
   }
 
@@ -1400,17 +1399,44 @@ button:disabled {
   }
 
   .sp1 {
-    width: 544px;
-    height: 448px;
+    grid-column: 1 / 1 span;
+    width: 500px;
+    display: grid;
+    height: 500px;
     border-radius: 8px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
     background: url(/statics/images/Snapshoot_Portfolio.png);
     background-size: 80%;
     background-repeat: no-repeat;
     left: 24px;
     background-position: 10% 50%;
+    background-color: #396df2;
   }
 
+  .lb2 {
+    background-color: #2230d2;
+  }
+
+  #about_me {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    margin: 0 8% 10%;
+    grid-column-gap: 5%;
+    background-color: #18a0fa;
+  }
+
+  .top h2 {
+    margin-bottom: 0;
+  }
+
+  .smd h2 {
+    margin-bottom: 0;
+  }
+
+  .smd ul {
+    margin-top: 8px;
+  }
+
+  .pta2 {
+    margin-bottom: 0;
+  }
 }
