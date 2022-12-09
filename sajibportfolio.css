@@ -796,6 +796,17 @@ a {
   flex: none;
   order: 3;
   flex-grow: 0;
+  transition: 1s;
+}
+
+.rsm:hover {
+  width: 230px;
+  background-color: #6070ff;
+  justify-content: center;
+}
+
+.rsm:hover a {
+  color: #000;
 }
 
 .brt {
