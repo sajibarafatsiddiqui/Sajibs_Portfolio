@@ -1297,7 +1297,6 @@ button:disabled {
     flex: none;
     order: 0;
     flex-grow: 0;
-
   }
 
   #works {
@@ -1329,7 +1328,6 @@ button:disabled {
     width: 80%;
     margin-left: 10%;
     grid-column-gap: 10px;
-
   }
 
   .mwp2 {
@@ -1348,7 +1346,6 @@ button:disabled {
     margin-left: 10%;
     margin-bottom: 0;
     grid-column-gap: 20px;
-
   }
 
   .mwp3 {
@@ -1398,7 +1395,6 @@ button:disabled {
     background-repeat: no-repeat;
     left: 24px;
     background-position: 10% 50%;
-
   }
 
   .sp2 {
@@ -1438,7 +1434,6 @@ button:disabled {
     background-repeat: no-repeat;
     left: 24px;
     background-position: 10% 50%;
-
   }
 
   #about_me {
@@ -1457,7 +1452,6 @@ button:disabled {
     grid-row-start: initial;
     grid-template-columns: 40% 60%;
     grid-template-rows: max-content;
-
   }
 
   .top {
@@ -1514,7 +1508,6 @@ button:disabled {
     display: flex;
     justify-content: space-between;
     margin-right: 0;
-
   }
 
   .pro {
@@ -1575,7 +1568,6 @@ button:disabled {
     flex-direction: column;
     align-items: center;
     left: 0;
-
   }
 
 }
