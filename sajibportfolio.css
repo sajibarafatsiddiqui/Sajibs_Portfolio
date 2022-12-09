@@ -1,7 +1,15 @@
 body {
-  max-width: 375px;
-  background: #fff;
+  background-color: #f7f7f9;
+  font-family: Poppins, sans-serif;
   margin: 0;
+}
+
+button {
+  text-decoration: none !important;
+}
+
+.nav_link {
+  display: none;
 }
 
 p:hover {
@@ -14,48 +22,32 @@ p:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 114px 24px;
-  gap: 88px;
-  position: absolute;
-  width: 375px;
-  height: 420px;
-  left: calc(50% - 375px / 2);
-  top: 92px;
+  padding: 0 24px;
+  height: 620px;
   background-color: #fff;
   border-radius: 0 0 0 5%;
+
 }
 
 .toolbar {
   display: flex;
-  width: 100%;
-  height: 30px;
   justify-content: space-between;
 }
 
-.logo-placeholder {
-  top: 0;
-  bottom: 0;
+#nav {
   display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  width: 30%;
-  height: 30px;
+  justify-content: space-between;
 }
 
 .mylogo {
-  width: 76px;
-  height: 20px;
+  flex-direction: row;
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  display: flex;
-  align-items: center;
-  text-align: center;
   color: #6070ff;
+  margin-top: 10px;
 }
 
 .hd3 {
@@ -92,7 +84,6 @@ p:hover {
   align-items: center;
   justify-content: center;
   position: absolute;
-  width: 30%;
   height: 30px;
   left: 70%;
 }
@@ -130,10 +121,11 @@ p:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 500px;
-  position: absolute;
+  height: 600px;
   align-items: flex-start;
-  top: 40px;
+  top: 50px;
+  width: 100%;
+  position: absolute;
 }
 
 .short-presentation {
@@ -150,7 +142,6 @@ p:hover {
   flex: none;
   order: 0;
   flex-grow: 0;
-  position: relative;
 }
 
 #home_presentation p {
@@ -167,12 +158,14 @@ p:hover {
 #works {
   display: grid;
   grid-template-rows: 25% 25% 25% 25%;
+  grid-template-columns: max-content;
   padding: 114px 24px;
+  margin: 0;
   gap: 40px;
-  width: 375px;
+  width: 100%;
   height: 3800px;
   position: absolute;
-  top: 550px;
+  top: 650px;
   left: calc(50% - 375px / 2);
   border-radius: 16px;
   flex: none;
@@ -276,7 +269,7 @@ p:hover {
   flex: none;
   order: 0;
   flex-grow: 0;
-  background: url(/statics/images/Snapshoot_Portfolio2.png);
+  background: url(/statics/images/Snapshoot_Portfolio3.png);
 }
 
 .sp4 {
@@ -296,7 +289,6 @@ p:hover {
   padding: 0;
   gap: 12px;
   width: 295px;
-  height: 332px;
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -581,6 +573,14 @@ p:hover {
   border-radius: 8px;
 }
 
+.btn:hover {
+  background-color: #6070ff; 
+}
+
+.btt:hover {
+  color: #fff;
+}
+
 .btt {
   width: 100px;
   height: 24px;
@@ -681,6 +681,7 @@ p:hover {
   order: 0;
   flex-grow: 0;
   top: 4506px;
+  background: #fff;
 }
 
 .top {
@@ -777,6 +778,10 @@ p:hover {
   flex-grow: 0;
 }
 
+a {
+  text-decoration: none !important;
+}
+
 .rsm {
   box-sizing: border-box;
   display: flex;
@@ -791,6 +796,17 @@ p:hover {
   flex: none;
   order: 3;
   flex-grow: 0;
+  transition: 1s;
+}
+
+.rsm:hover {
+  width: 230px;
+  background-color: #6070ff;
+  justify-content: center;
+}
+
+.rsm:hover a {
+  color: #000;
 }
 
 .rsm:hover{
@@ -1248,4 +1264,363 @@ button:disabled {
 .form-container button:hover {
   color: #fff;
   background-color: #6070ff;
+}
+
+@media (min-width: 1024px) {
+  .toolbar {
+    justify-content: space-around;
+    width: 100%;
+    justify-self: end;
+  }
+
+  .mylogo {
+    font-family: Poppins, sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration: none;
+    margin-top: 10px;
+  }
+
+  .icon img {
+    display: none;
+  }
+
+  .icon ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 190px;
+  }
+
+  #nav {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  #nav .nav_link li {
+    list-style: none;
+  }
+
+  #nav .nav_link li a {
+    text-decoration: none;
+    font-family: Poppins, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+  }
+
+  .home-page {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 24px;
+    height: 500px;
+    border-radius: 0 0 0 5%;
+    gap: 20px;
+    padding-top: 30px;
+  }
+
+  #home_presentation {
+    background-image: url(statics/images/Header_bg.png);
+    background-size: 100% 100%;
+    background-position: top 119px left 34.6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+    align-items: flex-start;
+    top: 40px;
+    padding: 0 15%;
+  }
+
+  .short-presentation {
+    height: 150px;
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 52px;
+    display: flex;
+    align-items: center;
+    color: #172b4d;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  #works {
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+    width: 96%;
+    padding: 114px 12px;
+    margin-left: -420px;
+    gap: 40px;
+    height: 2200px;
+    position: absolute;
+    border-radius: 16px;
+    grid-row-gap: 20px;
+    align-items: flex-start;
+  }
+
+  .mwp1 {
+    grid-row: 1 / 1 span;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 16px;
+    gap: 40px;
+    height: 550px;
+    left: 0;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    width: 100%;
+    margin-left: 10%;
+    grid-column-gap: 10px;
+  }
+
+  .mwp2 {
+    grid-row: 2 / 1 span;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    box-sizing: border-box;
+    align-items: center;
+    left: 0;
+    gap: 40px;
+    width: 100%;
+    height: 550px;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    margin-left: 10%;
+    margin-bottom: 0;
+    grid-column-gap: 20px;
+  }
+
+  .mwp3 {
+    grid-row: 3 / 1 span;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 16px;
+    gap: 40px;
+    height: 550px;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    width: 100%;
+    margin-left: 10%;
+    grid-column-gap: 20px;
+  }
+
+  .mwp4 {
+    grid-row: 4 / 1 span;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: max-content;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+    height: 550px;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    width: 100%;
+    margin-left: 10%;
+    margin-top: 0;
+    grid-column-gap: 20px;
+  }
+
+  .sp1 {
+    grid-column: 1 / 1 span;
+    width: 500px;
+    display: grid;
+    height: 500px;
+    border-radius: 8px;
+    background: url(statics/images/Snapshoot_Portfolio.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    left: 24px;
+    background-position: 10% 50%;
+  }
+
+  .sp2 {
+    grid-column: 1 / 1 span;
+    width: 500px;
+    display: grid;
+    height: 500px;
+    border-radius: 8px;
+    background: url(statics/images/Snapshoot_Portfolio1.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    left: 24px;
+    background-position: 10% 50%;
+  }
+
+  .sp3 {
+    grid-column: 1 / 1 span;
+    width: 500px;
+    display: grid;
+    height: 500px;
+    border-radius: 8px;
+    background: url(/statics/images/Snapshoot_Portfolio2.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    left: 24px;
+    background-position: 10% 50%;
+  }
+
+  .sp4 {
+    grid-column: 1 / 1 span;
+    width: 500px;
+    display: grid;
+    height: 500px;
+    border-radius: 8px;
+    background: url(/statics/images/Snapshoot_Portfolio3.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    left: 24px;
+    background-position: 10% 50%;
+  }
+
+  #about_me {
+    background-color: #fff;
+    border-radius: 7.5%;
+    position: absolute;
+    top: 3000px;
+    left: -0.5px;
+    right: 45px;
+    bottom: 0;
+    padding-right: 60px;
+    margin-top: 0;
+    place-items: center;
+    width: 93%;
+    display: grid;
+    grid-row-start: initial;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: max-content;
+    font-family: Poppins, sans-serif;
+  }
+
+  .top {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 0;
+    margin-bottom: 100px;
+    width: 327px;
+    height: 409px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .pt2 {
+    width: 400px;
+    margin: 0;
+  }
+
+  .prt {
+    width: 400px;
+    margin: 0;
+  }
+
+  .prt2 {
+    width: 400px;
+    margin: 0;
+  }
+
+  .jhora {
+    width: 400px;
+    margin: 0;
+    height: 60px;
+  }
+
+  .top h2 {
+    margin-bottom: 0;
+  }
+
+  .smd h2 {
+    margin-bottom: 0;
+  }
+
+  .smd ul {
+    margin-top: 8px;
+  }
+
+  .pta2 {
+    margin-bottom: 0;
+  }
+
+  .programmes ul {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0;
+  }
+
+  button {
+    text-decoration: none !important;
+  }
+
+  .pro {
+    display: flex;
+    flex-direction: column;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    background-color: #dfe1e6;
+    margin: 2px;
+    padding: 5px;
+    border-radius: 10px;
+    align-items: center;
+  }
+
+  .stt {
+    width: 157px;
+    height: 24px;
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #7f8cff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+
+  .form-section {
+    background-image:
+      url('statics/images//statics/e1.svg'),
+      url('statics/images/r1.svg'),
+      url('statics/images/e2.svg'),
+      url('statics/images/r2.svg'),
+      url('statics/images/e3.svg'),
+      url('statics/images/r3.svg'),
+      url('statics/images/e4.svg'),
+      url('statics/images/e5.svg'),
+      url('statics/images/contact-form-\ background.svg');
+    background-repeat: no-repeat;
+    background-position:
+      5.2% 44%,
+      5.83% 40.07%,
+      120% 8.06%,
+      100.16% 8%,
+      24.86% 90.19%,
+      23.4% 87.58%,
+      36.4% 13.47%,
+      78.4% 61.58%,
+      0;
+    background-size: auto, auto, 90px 89px, auto, auto, auto, auto, auto, cover;
+    width: 100%;
+    height: 689px;
+    margin: 0;
+    top: 3700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    left: 0;
+  }
 }
