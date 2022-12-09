@@ -1,5 +1,5 @@
 body {
-  background: #fff;
+  background-color: #e5e5e5;
   margin: 0;
 }
 
@@ -31,13 +31,9 @@ p:hover {
 #nav {
   display: flex;
   justify-content: space-between;
-  margin-top: 50px;
 }
 
 .logo-placeholder {
-  top: 0;
-  bottom: 0;
-
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
@@ -291,7 +287,7 @@ p:hover {
   padding: 0;
   gap: 12px;
   width: 295px;
-  height: 332px;
+
   flex: none;
   order: 1;
   flex-grow: 0;
@@ -1317,5 +1313,104 @@ button:disabled {
 
   }
 
+  #works {
+    display: grid;
+    grid-template-rows: 25% 25% 25% 25%;
+
+    width: 100%;
+    padding: 114px 24px;
+    margin-left: -420px;
+    gap: 40px;
+    height: 2500px;
+    position: absolute;
+    border-radius: 16px;
+    grid-row-gap: 20px;
+  }
+
+  .mwp1 {
+    grid-row: 1 / 1 span;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 16px;
+    gap: 40px;
+    height: 550px;
+    left: 0;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    width: 80%;
+    margin-left: 10%;
+    grid-column-gap: 20px;
+
+  }
+
+
+
+  .mwp2 {
+    grid-row: 2 / 1 span;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    box-sizing: border-box;
+    align-items: center;
+    left: 0;
+    gap: 40px;
+    width: 80%;
+    height: 550px;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    margin-left: 10%;
+    grid-column-gap: 20px;
+
+  }
+
+  .mwp3 {
+    grid-row: 3 / 1 span;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 16px;
+    gap: 40px;
+    height: 550px;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    width: 80%;
+    margin-left: 10%;
+    grid-column-gap: 20px;
+  }
+
+  .mwp4 {
+    grid-row: 4 / 1 span;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    box-sizing: border-box;
+    align-items: center;
+    padding: 16px;
+    gap: 10px;
+    height: 800px;
+    background: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    width: 80%;
+    margin-left: 10%;
+    grid-column-gap: 20px;
+  }
+
+  .sp1 {
+    width: 544px;
+    height: 448px;
+    border-radius: 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    background: url(/statics/images/Snapshoot_Portfolio.png);
+    background-size: 80%;
+    background-repeat: no-repeat;
+    left: 24px;
+    background-position: 10% 50%;
+  }
 
 }
