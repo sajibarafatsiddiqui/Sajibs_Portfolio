@@ -1222,7 +1222,7 @@ button:disabled {
   background-color: #6070ff;
 }
 
-@media(min-width: 1024px) {
+@media (min-width: 1024px) {
   .toolbar {
     justify-content: space-around;
     width: 100%;
@@ -1569,5 +1569,4 @@ button:disabled {
     align-items: center;
     left: 0;
   }
-
 }
