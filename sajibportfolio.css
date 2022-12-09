@@ -1,5 +1,5 @@
 body {
-  background-color: #F7F7F9;
+  background-color: #f7f7f9;
   margin: 0;
 }
 
@@ -136,7 +136,6 @@ p:hover {
   flex: none;
   order: 0;
   flex-grow: 0;
-
 }
 
 #home_presentation p {
@@ -155,7 +154,6 @@ p:hover {
   grid-template-rows: 25% 25% 25% 25%;
   grid-template-columns: max-content;
   padding: 114px 24px;
-
   margin: 0;
   gap: 40px;
   width: 100%;
@@ -1225,8 +1223,6 @@ button:disabled {
 }
 
 @media(min-width: 1024px) {
-
-
   .toolbar {
     justify-content: space-around;
     width: 100%;
@@ -1239,8 +1235,6 @@ button:disabled {
     font-size: 18px;
     text-decoration: none;
     margin-top: 10px;
-
-
   }
 
   .icon img {
@@ -1338,8 +1332,6 @@ button:disabled {
 
   }
 
-
-
   .mwp2 {
     grid-row: 2 / 1 span;
     display: grid;
@@ -1433,7 +1425,6 @@ button:disabled {
     background-repeat: no-repeat;
     left: 24px;
     background-position: 10% 50%;
-
   }
 
   .sp4 {
