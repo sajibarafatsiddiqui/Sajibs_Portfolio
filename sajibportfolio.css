@@ -920,8 +920,7 @@ a {
   flex: 1;
   order: 0;
   flex-grow: 0;
-  align-items: center;
-  justify-content: space-between;
+  place-items: center;
 }
 
 .lfs {
@@ -933,6 +932,10 @@ a {
   font-weight: 600;
   line-height: 20px;
   font-size: 20px;
+}
+
+.img0 {
+  display: flex;
 }
 
 .lhr {
@@ -1498,26 +1501,40 @@ button:disabled {
     right: 45px;
     bottom: 0;
     margin-top: 0;
-    place-items: center;
     width: 100%;
     display: grid;
     grid-row-start: initial;
-    grid-template-columns: 40% 60%;
+    grid-column-gap: 20px;
+    grid-template-columns: 50% 50%;
     grid-template-rows: max-content;
-    font-family: Poppins, sans-serif;
+    font-family: Poppins;
   }
 
   .top {
     display: flex;
     flex-direction: column;
     justify-content: start;
-    padding: 0;
+    padding: 20px;
+    margin: 40px;
     margin-bottom: 100px;
-    width: 327px;
+    width: 500px;
     height: 409px;
     flex: none;
     order: 0;
     flex-grow: 0;
+  }
+
+  #spec_name {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    flex: 1;
+    order: 0;
+    flex-grow: 0;
+    align-items: flex-start;
+    justify-content: space-between;
   }
 
   .pt2 {
@@ -1580,6 +1597,14 @@ button:disabled {
     align-items: center;
   }
 
+  #my_skills {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 85px;
+    margin-left: 24px;
+  }
+
   .stt {
     width: 157px;
     height: 24px;
@@ -1625,5 +1650,39 @@ button:disabled {
     flex-direction: column;
     align-items: center;
     left: 0;
+  }
+
+  .lhr {
+    display: flex;
+    padding-top: 5px;
+    justify-content: space-between;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .lfsi {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+  }
+
+  .lfs {
+    display: flex;
+    flex-direction: row;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    font-weight: 600;
+    line-height: 20px;
+    font-size: 20px;
+  }
+
+  .img0 {
+    display: flex;
+    margin-top: 23px;
   }
 }
