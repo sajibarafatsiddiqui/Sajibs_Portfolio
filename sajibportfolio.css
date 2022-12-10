@@ -797,6 +797,15 @@ a {
   flex-grow: 0;
 }
 
+.ss {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  width: 327px;
+  height: 464.15px;
+  list-style-type: none;
+}
+
 .brt {
   width: 138px;
   height: 24px;
@@ -813,15 +822,6 @@ a {
   flex: none;
   order: 0;
   flex-grow: 0;
-}
-
-.ss {
-  display: flex;
-  flex-direction: column;
-  padding: 0;
-  width: 327px;
-  height: 464.15px;
-  list-style-type: none;
 }
 
 .frs {
