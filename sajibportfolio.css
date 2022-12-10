@@ -131,7 +131,7 @@ p:hover {
 
 .short-presentation {
   padding: 0 15px;
-  height: 150px;
+  height: 200px;
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -159,14 +159,14 @@ p:hover {
 #works {
   display: grid;
   grid-template-rows: 25% 25% 25% 25%;
-  grid-template-columns: max-content;
+  grid-template-columns: auto;
   padding: 114px 24px;
   margin: 0;
   gap: 40px;
   width: 100%;
-  height: 3800px;
+  height: 3200px;
   position: absolute;
-  top: 650px;
+  top: 550px;
   left: calc(50% - 375px / 2);
   border-radius: 16px;
   flex: none;
@@ -176,6 +176,8 @@ p:hover {
 
 .mwp1 {
   grid-row: 1 / 1 span;
+  grid-column: 1 / 1 span;
+  width: 200%;
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -205,7 +207,7 @@ p:hover {
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   flex: none;
-  order: 1;
+  order: 2;
   flex-grow: 0;
 }
 
@@ -222,7 +224,7 @@ p:hover {
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   flex: none;
-  order: 2;
+  order: 3;
   flex-grow: 0;
 }
 
@@ -239,7 +241,7 @@ p:hover {
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   flex: none;
-  order: 3;
+  order: 4;
   flex-grow: 0;
 }
 
@@ -673,15 +675,15 @@ p:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 114px 24px;
-  gap: 24px;
+  padding: 114px 16px;
+  gap: 80px;
   position: absolute;
   height: 1125.15px;
   left: calc(50% - 375px / 2);
   flex: none;
   order: 0;
   flex-grow: 0;
-  top: 4506px;
+  top: 4000px;
   background: #fff;
 }
 
@@ -1106,7 +1108,7 @@ a {
   width: 375px;
   height: 689px;
   margin-top: 100px;
-  top: 5579px;
+  top: 5000px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1241,7 +1243,7 @@ button:disabled {
   background-color: #6070ff;
 }
 
-@media (min-width: 1024px) {
+@media screen and (min-width: 768px) {
 
   .toolbar {
     display: flex;
@@ -1353,17 +1355,21 @@ button:disabled {
   }
 
   #works {
+    left: 0;
+    right: 0;
+    top: 600px;
     display: grid;
     grid-template-rows: 25% 25% 25% 25%;
-    width: 96%;
-    padding: 114px 12px;
-    margin-left: -420px;
-    gap: 40px;
+    grid-template-columns: auto;
+    margin: 0;
+    padding: 0;
+    width: 95%;
+    gap: 0;
     height: 2200px;
-    position: absolute;
     border-radius: 16px;
     grid-row-gap: 20px;
-    align-items: flex-start;
+    place-items: center;
+
   }
 
   .mwp1 {
@@ -1372,14 +1378,13 @@ button:disabled {
     grid-template-columns: 50% 50%;
     box-sizing: border-box;
     align-items: center;
-    padding: 16px;
     gap: 40px;
     height: 550px;
     left: 0;
+    right: 0;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
     width: 100%;
-    margin-left: 10%;
     grid-column-gap: 10px;
   }
 
