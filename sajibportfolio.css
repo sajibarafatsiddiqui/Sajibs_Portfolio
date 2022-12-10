@@ -282,8 +282,9 @@ p:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: center;
   padding: 0;
-  gap: 12px;
+  gap: 0;
   width: 295px;
   flex: none;
   order: 1;
@@ -1211,14 +1212,19 @@ button {
 }
 
 button:active {
-  color: #fff;
-  background-color: #2230d2;
+  color: #fff !important;
+  background-color: #2230d2 !important;
 }
 
 button:disabled {
-  background-color: #f4f1f0;
-  color: #c1c7d0;
+  background-color: #f4f1f0 !important;
+  color: #fff !important;
   border: 1px solid #c1c7d0;
+}
+
+button:hover {
+  background-color: #6070ff !important;
+  color: #fff !important;
 }
 
 .form-container button {
@@ -1369,7 +1375,7 @@ button:disabled {
     grid-template-columns: 50% 50%;
     box-sizing: border-box;
     align-items: initial;
-    justify-items: center;
+    justify-items: flex-start;
     gap: 40px;
     height: 320px;
     left: 0;
@@ -1388,7 +1394,7 @@ button:disabled {
     grid-template-columns: 50% 50%;
     box-sizing: border-box;
     align-items: initial;
-    justify-items: center;
+    justify-items: flex-start;
     gap: 40px;
     height: 320px;
     left: 0;
@@ -1407,7 +1413,7 @@ button:disabled {
     grid-template-columns: 50% 50%;
     box-sizing: border-box;
     align-items: initial;
-    justify-items: center;
+    justify-items: flex-start;
     gap: 40px;
     height: 320px;
     left: 0;
@@ -1426,7 +1432,7 @@ button:disabled {
     grid-template-columns: 50% 50%;
     box-sizing: border-box;
     align-items: initial;
-    justify-items: center;
+    justify-items: flex-start;
     gap: 40px;
     height: 320px;
     left: 0;
@@ -1442,8 +1448,8 @@ button:disabled {
   .sp1 {
     grid-column: 1 / 1 span;
     width: 500px;
+    height: 280px;
     display: grid;
-    height: 500px;
     border-radius: 8px;
     background: url(statics/images/Snapshoot_Portfolio.png);
     background-size: 500px 280px;
@@ -1453,8 +1459,8 @@ button:disabled {
   .sp2 {
     grid-column: 1 / 1 span;
     width: 500px;
+    height: 280px;
     display: grid;
-    height: 500px;
     border-radius: 8px;
     background: url(statics/images/Snapshoot_Portfolio1.png);
     background-size: 500px 280px;
@@ -1464,10 +1470,10 @@ button:disabled {
   .sp3 {
     grid-column: 1 / 1 span;
     width: 500px;
+    height: 280px;
     display: grid;
-    height: 500px;
     border-radius: 8px;
-    background: url(/statics/images/Snapshoot_Portfolio2.png);
+    background: url(statics/images/Snapshoot_Portfolio2.png);
     background-size: 500px 280px;
     background-repeat: no-repeat;
   }
@@ -1475,10 +1481,10 @@ button:disabled {
   .sp4 {
     grid-column: 1 / 1 span;
     width: 500px;
+    height: 280px;
     display: grid;
-    height: 500px;
     border-radius: 8px;
-    background: url(/statics/images/Snapshoot_Portfolio3.png);
+    background: url(statics/images/Snapshoot_Portfolio3.png);
     background-size: 500px 280px;
     background-repeat: no-repeat;
   }
@@ -1568,8 +1574,9 @@ button:disabled {
 
   .programmes ul {
     display: flex;
-    justify-content: space-between;
     margin-right: 0;
+    padding: 0;
+    gap: 20px;
   }
 
   button {
@@ -1668,7 +1675,7 @@ button:disabled {
     flex: none;
     order: 0;
     flex-grow: 0;
-    font-weight: 600;
+    font-weight: 300;
     line-height: 20px;
     font-size: 20px;
   }
@@ -1676,5 +1683,34 @@ button:disabled {
   .img0 {
     display: flex;
     margin-top: 23px;
+  }
+
+  .btn {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+    gap: 10px;
+    width: 130px;
+    height: 48px;
+    left: 0;
+    top: calc(50% - 48px / 2);
+    border: 1px solid #6070ff;
+    border-radius: 8px;
+  }
+
+  .btt {
+    height: 24px;
+    font-family: Poppins, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #396df2;
   }
 }
