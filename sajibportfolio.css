@@ -311,7 +311,6 @@ p:hover {
 
 .prt2 {
   width: 295px;
-  height: 80px;
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -683,7 +682,7 @@ p:hover {
   flex: none;
   order: 0;
   flex-grow: 0;
-  top: 4000px;
+  top: 3000px;
   background: #fff;
 }
 
@@ -1284,9 +1283,7 @@ button:disabled {
   }
 
   #nav {
-
     width: 100%;
-
   }
 
   #nav .nav_link li {
@@ -1363,13 +1360,12 @@ button:disabled {
     grid-template-columns: auto;
     margin: 0;
     padding: 0;
-    width: 95%;
+    width: 90%;
     gap: 0;
-    height: 2200px;
+    height: 1300px;
     border-radius: 16px;
     grid-row-gap: 20px;
     place-items: center;
-
   }
 
   .mwp1 {
@@ -1377,15 +1373,18 @@ button:disabled {
     display: grid;
     grid-template-columns: 50% 50%;
     box-sizing: border-box;
-    align-items: center;
+    align-items: initial;
+    justify-items: center;
     gap: 40px;
-    height: 550px;
+    height: 320px;
     left: 0;
     right: 0;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
     width: 100%;
-    grid-column-gap: 10px;
+    grid-column-gap: 20px;
+    grid-row-start: initial;
+    margin-left: 10%;
   }
 
   .mwp2 {
@@ -1393,17 +1392,18 @@ button:disabled {
     display: grid;
     grid-template-columns: 50% 50%;
     box-sizing: border-box;
-    align-items: center;
-    left: 0;
+    align-items: initial;
+    justify-items: center;
     gap: 40px;
-    width: 100%;
-    height: 550px;
-    background: #fff;
+    height: 320px;
+    left: 0;
+    right: 0;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
-    margin-left: 10%;
-    margin-bottom: 0;
+    width: 100%;
     grid-column-gap: 20px;
+    grid-row-start: initial;
+    margin-left: 10%;
   }
 
   .mwp3 {
@@ -1411,35 +1411,37 @@ button:disabled {
     display: grid;
     grid-template-columns: 50% 50%;
     box-sizing: border-box;
-    align-items: center;
-    padding: 16px;
+    align-items: initial;
+    justify-items: center;
     gap: 40px;
-    height: 550px;
-    background: #fff;
+    height: 320px;
+    left: 0;
+    right: 0;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
     width: 100%;
-    margin-left: 10%;
     grid-column-gap: 20px;
+    grid-row-start: initial;
+    margin-left: 10%;
   }
 
   .mwp4 {
     grid-row: 4 / 1 span;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: max-content;
     box-sizing: border-box;
-    align-items: center;
-    padding: 16px;
-    gap: 10px;
-    height: 550px;
-    background: #fff;
+    align-items: initial;
+    justify-items: center;
+    gap: 40px;
+    height: 320px;
+    left: 0;
+    right: 0;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
     width: 100%;
-    margin-left: 10%;
-    margin-top: 0;
     grid-column-gap: 20px;
+    grid-row-start: initial;
+    margin-left: 10%;
   }
 
   .sp1 {
@@ -1449,10 +1451,8 @@ button:disabled {
     height: 500px;
     border-radius: 8px;
     background: url(statics/images/Snapshoot_Portfolio.png);
-    background-size: 80%;
+    background-size: 500px 280px;
     background-repeat: no-repeat;
-    left: 24px;
-    background-position: 10% 50%;
   }
 
   .sp2 {
@@ -1462,10 +1462,8 @@ button:disabled {
     height: 500px;
     border-radius: 8px;
     background: url(statics/images/Snapshoot_Portfolio1.png);
-    background-size: 80%;
+    background-size: 500px 280px;
     background-repeat: no-repeat;
-    left: 24px;
-    background-position: 10% 50%;
   }
 
   .sp3 {
@@ -1475,10 +1473,8 @@ button:disabled {
     height: 500px;
     border-radius: 8px;
     background: url(/statics/images/Snapshoot_Portfolio2.png);
-    background-size: 80%;
+    background-size: 500px 280px;
     background-repeat: no-repeat;
-    left: 24px;
-    background-position: 10% 50%;
   }
 
   .sp4 {
@@ -1488,24 +1484,22 @@ button:disabled {
     height: 500px;
     border-radius: 8px;
     background: url(/statics/images/Snapshoot_Portfolio3.png);
-    background-size: 80%;
+    background-size: 500px 280px;
     background-repeat: no-repeat;
-    left: 24px;
-    background-position: 10% 50%;
   }
 
   #about_me {
     background-color: #fff;
     border-radius: 7.5%;
     position: absolute;
-    top: 3000px;
+    padding: 0;
+    top: 2000px;
     left: -0.5px;
     right: 45px;
     bottom: 0;
-    padding-right: 60px;
     margin-top: 0;
     place-items: center;
-    width: 93%;
+    width: 100%;
     display: grid;
     grid-row-start: initial;
     grid-template-columns: 40% 60%;
@@ -1626,7 +1620,7 @@ button:disabled {
     width: 100%;
     height: 689px;
     margin: 0;
-    top: 3700px;
+    top: 2600px;
     display: flex;
     flex-direction: column;
     align-items: center;
