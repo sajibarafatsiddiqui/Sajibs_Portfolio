@@ -8,10 +8,6 @@ img[alt] {
   padding: 0.8rem;
 }
 
-section{
-  display: flex;
-}
-
 .toolbar {
   display: flex;
   width: 90%;
@@ -1573,7 +1569,7 @@ button:hover {
   .smd h2 {
     margin-bottom: 0;
   }
-
+  
   .smd ul {
     margin-top: 8px;
   }
@@ -1723,4 +1719,5 @@ button:hover {
     letter-spacing: 0.03em;
     color: #396df2;
   }
+
 }
