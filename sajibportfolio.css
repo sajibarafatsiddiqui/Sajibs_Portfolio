@@ -437,13 +437,13 @@ p:hover {
 }
 
 .jhora {
-  width: 295px;
+  width: calc(295px);
   height: 76px;
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: calc(15px);
+  line-height: calc(24px);
   color: #344563;
   flex: none;
   order: 1;
