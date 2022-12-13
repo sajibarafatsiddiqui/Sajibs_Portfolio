@@ -50,7 +50,7 @@ p:hover {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
-  color: #6070ff;
+  color: #2335d1;
   margin-top: 10px;
 }
 
@@ -62,7 +62,7 @@ p:hover {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7f8cff;
+  color: #2335d1;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -486,7 +486,7 @@ p:hover {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: #6070ff;
+  color: #2738ce;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -515,7 +515,7 @@ p:hover {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: #6070ff;
+  color: #2335d1;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -544,7 +544,7 @@ p:hover {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: #6070ff;
+  color: #2738ce;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -747,7 +747,7 @@ p:hover {
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  color: #7f8cff;
+  color: #2335d1;
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -1206,7 +1206,7 @@ button {
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
-  color: #7f8cff;
+  color: #3746cd;
   background-color: #fff;
   padding: 12px 12px 12px 12px;
   border: 1px solid #7f8cff;
@@ -1616,7 +1616,7 @@ button:hover {
     font-weight: 500;
     font-size: 16px;
     line-height: 24px;
-    color: #7f8cff;
+    color: #2335d1;
     flex: none;
     order: 0;
     flex-grow: 0;
@@ -1700,7 +1700,7 @@ button:hover {
     height: 48px;
     left: 0;
     top: calc(50% - 48px / 2);
-    border: 1px solid #6070ff;
+    border: 1px solid #2335d1;
     border-radius: 8px;
   }
 
