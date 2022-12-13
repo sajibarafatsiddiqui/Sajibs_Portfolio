@@ -1361,7 +1361,7 @@ button:hover {
   #works {
     left: 0;
     right: 0;
-    top: 110vh;
+    top: 115vh;
     display: grid;
     grid-template-rows: 25% 25% 25% 25%;
     grid-template-columns: auto;
@@ -1369,7 +1369,7 @@ button:hover {
     padding: 0;
     width: 90%;
     gap: 0;
-    height: calc(2*100vh);
+    height: calc(2.10*100vh);
     border-radius: 16px;
     grid-row-gap: 20px;
     place-items: center;
@@ -1500,7 +1500,7 @@ button:hover {
     border-radius: 7.5%;
     position: absolute;
     padding: 0;
-    top: 360vh;
+    top: 340vh;
     left: -0.5px;
     right: 45px;
     bottom: 0;
