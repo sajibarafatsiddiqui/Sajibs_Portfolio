@@ -4,6 +4,10 @@ body {
   margin: 0;
 }
 
+img[alt] {
+  padding: .8rem;
+}
+
 .toolbar {
   display: flex;
   width: 90%;
