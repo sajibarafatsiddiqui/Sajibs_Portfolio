@@ -36,7 +36,7 @@ p:hover {
   align-items: flex-start;
   padding: 0;
   margin: 0;
-  height: 105vh;
+  height: 620px;
   background-color: #fff;
   border-radius: 0 0 0 5%;
   padding-top: 0;
@@ -1311,7 +1311,7 @@ button:hover {
     flex-direction: column;
     align-items: flex-start;
     padding: 0;
-    height: 105vh;
+    height: 550px;
     border-radius: 0 0 0 5%;
     gap: 20px;
     padding-top: 30px;
@@ -1337,7 +1337,7 @@ button:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 105vh;
+    height: 500px;
     align-items: center;
     padding: 0;
   }
@@ -1361,7 +1361,7 @@ button:hover {
   #works {
     left: 0;
     right: 0;
-    top: 115vh;
+    top: 600px;
     display: grid;
     grid-template-rows: 25% 25% 25% 25%;
     grid-template-columns: auto;
@@ -1369,7 +1369,7 @@ button:hover {
     padding: 0;
     width: 90%;
     gap: 0;
-    height: calc(2.10*100vh);
+    height: 1300px;
     border-radius: 16px;
     grid-row-gap: 20px;
     place-items: center;
@@ -1500,7 +1500,7 @@ button:hover {
     border-radius: 7.5%;
     position: absolute;
     padding: 0;
-    top: 340vh;
+    top: 2000px;
     left: -0.5px;
     right: 45px;
     bottom: 0;
