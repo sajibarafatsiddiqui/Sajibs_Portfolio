@@ -2,7 +2,6 @@ html {
   font-size: 100%;
 }
 
-
 body {
   background-color: #f7f7f9;
   font-family: Poppins, sans-serif;
@@ -363,7 +362,7 @@ p:hover {
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: .8125rem;
+  font-size: 0.8125rem;
   line-height: 1.23;
   color: #344563;
   flex: none;
@@ -389,7 +388,7 @@ p:hover {
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 200;
-  font-size: .8125rem;
+  font-size: 0.8125rem;
   line-height: 1.23;
   color: #344563;
   flex: none;
@@ -415,7 +414,7 @@ p:hover {
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 200;
-  font-size: .8125rem;
+  font-size: 0.8125rem;
   line-height: 1.23;
   color: #344563;
   flex: none;
