@@ -1,10 +1,16 @@
+
+html {
+  font-size: 100%;
+}
+
+
 body {
   background-color: #f7f7f9;
   font-family: Poppins, sans-serif;
   margin: 0;
 }
 
-img[alt] {
+img {
   padding: .8rem;
 }
 
@@ -40,6 +46,7 @@ p:hover {
   background-color: #fff;
   border-radius: 0 0 0 5%;
   padding-top: 0;
+  background:red;
 }
 
 .mylogo {
@@ -48,8 +55,8 @@ p:hover {
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
+  font-size: 1.125rem;
+  line-height: 1.11;
   color: #2335d1;
   margin-top: 10px;
 }
@@ -60,8 +67,8 @@ p:hover {
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5;
   color: #2335d1;
   flex: none;
   order: 0;
@@ -134,8 +141,8 @@ p:hover {
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 50px;
-  line-height: 52px;
+  font-size: 3.125;
+  line-height: 1.04;
   display: flex;
   align-items: center;
   color: #172b4d;
@@ -147,8 +154,8 @@ p:hover {
 #home_presentation p {
   font-family: Poppins, sans-serif;
   font-weight: normal;
-  font-size: 16px;
-  line-height: 24px;
+  font-size: 1rem;
+  line-height: 1.5;
   color: #344563;
   margin: 12px 24px 0 24px;
   align-content: center;
@@ -312,8 +319,8 @@ p:hover {
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 32px;
-  line-height: 44px;
+  font-size: 2rem;
+  line-height: 1.375;
   color: #172b4d;
   flex: none;
   order: 0;
@@ -356,8 +363,8 @@ p:hover {
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 600;
-  font-size: 13px;
-  line-height: 16px;
+  font-size: .8125rem;
+  line-height: 1.23;
   color: #344563;
   flex: none;
   order: 0;
@@ -382,8 +389,8 @@ p:hover {
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 200;
-  font-size: 13px;
-  line-height: 16px;
+  font-size: .8125rem;
+  line-height: 1.23;
   color: #344563;
   flex: none;
   order: 0;
@@ -408,8 +415,8 @@ p:hover {
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 200;
-  font-size: 13px;
-  line-height: 16px;
+  font-size: .8125rem;
+  line-height: 1.23;
   color: #344563;
   flex: none;
   order: 0;
@@ -442,8 +449,8 @@ p:hover {
   font-family: Poppins, sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
+  font-size: .9375rem;
+  line-height: 1.6;
   color: #344563;
   flex: none;
   order: 1;
@@ -798,7 +805,7 @@ a {
   flex-grow: 0;
 }
 
-.ss {
+.skill_list {
   display: flex;
   flex-direction: column;
   padding: 0;
@@ -921,7 +928,7 @@ a {
   place-items: center;
 }
 
-.lfs {
+.spec_title {
   display: flex;
   flex-direction: row;
   flex: none;
