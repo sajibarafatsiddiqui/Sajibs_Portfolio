@@ -97,30 +97,8 @@ p:hover {
 }
 
 #home_presentation {
-  background-image:
-    url('../statics/images/Ellipse 11.png'),
-    url('../statics/images/Rectangle 4.png'),
-    url('../statics/images/Ellipse\ 3.png'),
-    url('../statics/images/Ellipse\ 8.png'),
-    url('../statics/images/Ellipse\ 5.png'),
-    url('../statics/images/Rectangle\ 7.png'),
-    url('../statics/images/Ellipse 12.png'),
-    url('../statics/images/Ellipse 4.png'),
-    url('../statics/images/Rectangle\ 5.png'),
-    url('../statics/images/Ellipse\ 13.png'),
-    url('../statics/images/Ellipse\ 15.png');
-  background-position:
-    19px 79px,
-    294px 68px,
-    323px 102px,
-    214px 110px,
-    125px 106px,
-    127px 98px,
-    370px 385px,
-    290px 509px,
-    240px 507px,
-    357px 392px,
-    106px 497px;
+  background-image: url(statics/images/Header_bg.png);
+  background-size: 100% 105vh;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -170,7 +148,6 @@ p:hover {
   height: 3200px;
   position: absolute;
   top: 550px;
-  left: calc(50% - 375px / 2);
   border-radius: 16px;
   flex: none;
   order: 0;
@@ -675,14 +652,15 @@ p:hover {
 }
 
 #about_me {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   padding: 114px 16px;
   gap: 80px;
   position: absolute;
+  border-radius: 16px;
   height: 1125.15px;
-  left: calc(50% - 375px / 2);
   flex: none;
   order: 0;
   flex-grow: 0;
@@ -694,9 +672,8 @@ p:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0;
+  padding: 10px;
   gap: 12px;
-  width: 327px;
   height: 409px;
   flex: none;
   order: 0;
@@ -1111,14 +1088,13 @@ a {
     0;
   background-size: auto, auto, 90px 89px, auto, auto, auto, auto, auto, cover;
   position: absolute;
-  width: 375px;
+  width: 100%;
   height: 689px;
   margin-top: 100px;
   top: 5000px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  left: calc(50% - 375px / 2);
 }
 
 input {
@@ -1722,5 +1698,9 @@ button:hover {
     text-align: center;
     letter-spacing: 0.03em;
     color: #396df2;
+  }
+
+  .mobile_menu {
+    display: none;
   }
 }
