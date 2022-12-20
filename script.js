@@ -5,7 +5,7 @@ hamburger.addEventListener('click', () => {
   const img = document.createElement('img')
   const links = document.querySelector('.nav_link')
   const home = document.querySelector('.home-page')
-  const divWrap = document.createElement('div')
+  const divContainer = document.createElement('div')
   const linksChilds = Array.from(links.children)
   const property = {
     color: '#fff',
@@ -16,7 +16,7 @@ hamburger.addEventListener('click', () => {
     textDecoration: 'none',
   }
 
-  divWrap.style.backgroundColor = '#6070FF'
+  divContainer.style.backgroundColor = '#6070FF'
   img.src = 'statics/images/Toolbar.png'
   img.style.float = 'right'
   img.style.marginRight = '1rem'
@@ -25,32 +25,29 @@ hamburger.addEventListener('click', () => {
   })
   links.style.display = 'block'
   links.style.clear = 'both'
-  divWrap.style.zIndex = '999'
-  divWrap.style.position = 'fixed'
-  divWrap.style.top = '0'
-  divWrap.style.height = '130vh'
-  divWrap.style.width = 'inherit'
+  divContainer.style.zIndex = '999'
+  divContainer.style.position = 'fixed'
+  divContainer.style.top = '0'
+  divContainer.style.height = '130vh'
+  divContainer.style.width = 'inherit'
   div.style.marginTop = '40px'
   links.style.listStyle = 'none'
   img.addEventListener('click', () => {
-    divWrap.style.display = 'none'
+    divContainer.style.display = 'none'
   })
 
   div.appendChild(img)
   div.appendChild(links)
-  divWrap.append(div)
-  home.appendChild(divWrap)
+  divContainer.append(div)
+  home.appendChild(divContainer)
 
   for (let i = 0; i < linksChilds.length; i += 1) {
     const eltChildren = linksChilds[i].children
     eltChildren[0].addEventListener('click', () => {
-      divWrap.style.display = 'none'
+      divContainer.style.display = 'none'
     })
     linksChilds[i].style.marginBottom = '20px'
-    // for (const prop of Object.keys(property)) {
-    for (let j = 0; j < Object.keys(property).length; j += 1) {
-      eltChildren[0].style[Object.keys(property)[j]] =
-        property[Object.keys(property)[j]]
-    }
+    Object.assign(linksChilds[i].style,property);
+    
   }
 })
