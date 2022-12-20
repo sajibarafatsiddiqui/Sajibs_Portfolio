@@ -10,7 +10,7 @@ hamburger.addEventListener('click', () => {
   const property = {
     color: '#fff',
     fontSize: '32px',
-    fontFamily: 'Poppins sans-serif',
+    fontFamily: '"Poppins", sans-serif',
     fontWeight: '600px',
     lineHeight: '44px',
     textDecoration: 'none',
@@ -47,7 +47,7 @@ hamburger.addEventListener('click', () => {
       divContainer.style.display = 'none'
     })
     linksChilds[i].style.marginBottom = '20px'
-    Object.assign(linksChilds[i].style,property);
+    Object.assign(eltChildren[0].style,property);
     
   }
 })
