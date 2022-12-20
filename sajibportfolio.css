@@ -18,6 +18,7 @@ body {
   flex-grow: 0;
   z-index: 1;
   position: fixed;
+  background-color: #f2f4f8;
 }
 
 .nav_link {
