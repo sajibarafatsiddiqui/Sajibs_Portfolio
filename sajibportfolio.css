@@ -13,13 +13,11 @@ body {
   width: inherit;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
   flex: 1;
   order: 0;
   flex-grow: 0;
   z-index: 1;
   position: fixed;
-  background-color: #18a0fa;
 }
 
 .nav_link {
@@ -84,7 +82,6 @@ p:hover {
 
 .icon {
   display: block;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
   height: 30px;
@@ -1235,27 +1232,32 @@ button:hover {
 @media screen and (min-width: 768px) {
   .toolbar {
     display: flex;
-    width: 90%;
+    width: inherit;
     justify-content: space-between;
     align-items: center;
-    padding-left: 5%;
+    position:fixed;
+    z-index: 1;
     flex: 1;
     order: 0;
     flex-grow: 0;
-    height: 100px;
+    height: 40px;
+    background-color: #f2f4f8;
   }
 
   .mylogo {
-    display: flex;
+    display: block;
     font-family: Poppins, sans-serif;
     font-weight: bold;
     font-size: 18px;
     text-decoration: none;
-    padding-left: 120px;
+    padding-left: 40px;
   }
 
   .icon {
-    display: flex;
+    display: block;
+    padding-right: 40px;
+    align-items: center;
+    justify-content: center;
   }
 
   .icon img {
@@ -1268,6 +1270,7 @@ button:hover {
     justify-content: space-between;
     list-style-type: none;
     min-width: 190px;
+    margin: 0;
   }
 
   #nav {
@@ -1295,7 +1298,6 @@ button:hover {
     height: 550px;
     border-radius: 0 0 0 5%;
     gap: 20px;
-    padding-top: 30px;
   }
 
   .profile {
