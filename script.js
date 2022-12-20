@@ -16,7 +16,7 @@ hamburger.addEventListener('click', () => {
     textDecoration: 'none',
   }
 
-  divWrap.style.backgroundColor = 'rgba(96, 112, 255,0.9)'
+  divWrap.style.backgroundColor = '#6070FF'
   img.src = 'statics/images/Toolbar.png'
   img.style.float = 'right'
   img.style.marginRight = '1rem'
@@ -26,10 +26,10 @@ hamburger.addEventListener('click', () => {
   links.style.display = 'block'
   links.style.clear = 'both'
   divWrap.style.zIndex = '999'
-  divWrap.style.position = 'absolute'
+  divWrap.style.position = 'fixed'
   divWrap.style.top = '0'
   divWrap.style.height = '130vh'
-  divWrap.style.width = '100%'
+  divWrap.style.width = 'inherit'
   div.style.marginTop = '40px'
   links.style.listStyle = 'none'
   img.addEventListener('click', () => {
