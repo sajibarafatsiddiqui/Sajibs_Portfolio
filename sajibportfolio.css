@@ -8,20 +8,17 @@ body {
   margin: 0;
 }
 
-img {
-  padding: 0.8rem;
-}
-
 .toolbar {
   display: flex;
-  width: 90%;
+  width: inherit;
   justify-content: space-between;
   align-items: center;
-  padding-left: 20px;
   flex: 1;
   order: 0;
   flex-grow: 0;
   z-index: 1;
+  position: fixed;
+  background-color: #f2f4f8;
 }
 
 .nav_link {
@@ -36,6 +33,7 @@ p:hover {
 
 .home-page {
   display: flex;
+  width: 100vw;
   flex-direction: column;
   align-items: flex-start;
   padding: 0;
@@ -43,11 +41,10 @@ p:hover {
   height: 620px;
   background-color: #fff;
   border-radius: 0 0 0 5%;
-  padding-top: 0;
 }
 
 .mylogo {
-  display: flex;
+  display: block;
   flex-direction: row;
   font-family: Poppins, sans-serif;
   font-style: normal;
@@ -55,7 +52,7 @@ p:hover {
   font-size: 1.125rem;
   line-height: 1.11;
   color: #2335d1;
-  margin-top: 10px;
+  padding-left: 20px;
 }
 
 .hd3 {
@@ -85,11 +82,11 @@ p:hover {
 }
 
 .icon {
-  display: flex;
-  flex-direction: row;
+  display: block;
   align-items: center;
   justify-content: center;
   height: 30px;
+  padding-right: 20px;
 }
 
 .nav:hover {
@@ -97,30 +94,8 @@ p:hover {
 }
 
 #home_presentation {
-  background-image:
-    url('../statics/images/Ellipse 11.png'),
-    url('../statics/images/Rectangle 4.png'),
-    url('../statics/images/Ellipse\ 3.png'),
-    url('../statics/images/Ellipse\ 8.png'),
-    url('../statics/images/Ellipse\ 5.png'),
-    url('../statics/images/Rectangle\ 7.png'),
-    url('../statics/images/Ellipse 12.png'),
-    url('../statics/images/Ellipse 4.png'),
-    url('../statics/images/Rectangle\ 5.png'),
-    url('../statics/images/Ellipse\ 13.png'),
-    url('../statics/images/Ellipse\ 15.png');
-  background-position:
-    19px 79px,
-    294px 68px,
-    323px 102px,
-    214px 110px,
-    125px 106px,
-    127px 98px,
-    370px 385px,
-    290px 509px,
-    240px 507px,
-    357px 392px,
-    106px 497px;
+  background-image: url(statics/images/Header_bg.png);
+  background-size: 100% 105vh;
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -163,14 +138,14 @@ p:hover {
   display: grid;
   grid-template-rows: 25% 25% 25% 25%;
   grid-template-columns: auto;
-  padding: 114px 24px;
+  place-items: center;
+  padding: 114px 0;
   margin: 0;
-  gap: 40px;
+  gap: 10px;
   width: 100%;
-  height: 3200px;
+  height: 2600px;
   position: absolute;
   top: 550px;
-  left: calc(50% - 375px / 2);
   border-radius: 16px;
   flex: none;
   order: 0;
@@ -184,7 +159,7 @@ p:hover {
   box-sizing: border-box;
   align-items: center;
   padding: 16px;
-  gap: 40px;
+  gap: 10px;
   height: auto;
   width: auto;
   left: 0;
@@ -203,7 +178,7 @@ p:hover {
   flex-direction: column;
   align-items: center;
   padding: 16px;
-  gap: 40px;
+  gap: 10px;
   height: auto;
   width: auto;
   background: #fff;
@@ -221,8 +196,9 @@ p:hover {
   flex-direction: column;
   align-items: center;
   padding: 16px;
-  gap: 40px;
-  height: 800px;
+  gap: 10px;
+  height: auto;
+  width: auto;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -239,7 +215,7 @@ p:hover {
   align-items: center;
   padding: 16px;
   gap: 10px;
-  height: 800px;
+  height: auto;
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -675,18 +651,19 @@ p:hover {
 }
 
 #about_me {
+  width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   padding: 114px 16px;
   gap: 80px;
   position: absolute;
+  border-radius: 16px;
   height: 1125.15px;
-  left: calc(50% - 375px / 2);
   flex: none;
   order: 0;
   flex-grow: 0;
-  top: 4000px;
+  top: 3350px;
   background: #fff;
 }
 
@@ -694,9 +671,8 @@ p:hover {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0;
+  padding: 10px;
   gap: 12px;
-  width: 327px;
   height: 409px;
   flex: none;
   order: 0;
@@ -1111,14 +1087,13 @@ a {
     0;
   background-size: auto, auto, 90px 89px, auto, auto, auto, auto, auto, cover;
   position: absolute;
-  width: 375px;
+  width: 100%;
   height: 689px;
   margin-top: 100px;
-  top: 5000px;
+  top: 4500px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  left: calc(50% - 375px / 2);
 }
 
 input {
@@ -1258,27 +1233,32 @@ button:hover {
 @media screen and (min-width: 768px) {
   .toolbar {
     display: flex;
-    width: 90%;
+    width: inherit;
     justify-content: space-between;
     align-items: center;
-    padding-left: 5%;
+    position: fixed;
+    z-index: 1;
     flex: 1;
     order: 0;
     flex-grow: 0;
-    height: 100px;
+    height: 40px;
+    background-color: #f2f4f8;
   }
 
   .mylogo {
-    display: flex;
+    display: block;
     font-family: Poppins, sans-serif;
     font-weight: bold;
     font-size: 18px;
     text-decoration: none;
-    padding-left: 120px;
+    padding-left: 40px;
   }
 
   .icon {
-    display: flex;
+    display: block;
+    padding-right: 40px;
+    align-items: center;
+    justify-content: center;
   }
 
   .icon img {
@@ -1291,6 +1271,7 @@ button:hover {
     justify-content: space-between;
     list-style-type: none;
     min-width: 190px;
+    margin: 0;
   }
 
   #nav {
@@ -1318,7 +1299,6 @@ button:hover {
     height: 550px;
     border-radius: 0 0 0 5%;
     gap: 20px;
-    padding-top: 30px;
   }
 
   .profile {
@@ -1722,5 +1702,9 @@ button:hover {
     text-align: center;
     letter-spacing: 0.03em;
     color: #396df2;
+  }
+
+  .mobile_menu {
+    display: none;
   }
 }
