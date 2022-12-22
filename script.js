@@ -98,7 +98,7 @@ const popUpBtn = document.querySelectorAll(".btn");
 console.log(popUpBtn);
 popUpBtn.forEach((btn) => {
   btn.addEventListener("click", () => {
-    const mediaQuery = window.matchMedia("(min-width: 1200px)");
+    const mediaQuery = window.matchMedia("(min-width: 768px)");
     // Check if the media query is true
     if (mediaQuery.matches) {
       const container = document.createElement("div");
@@ -141,6 +141,8 @@ popUpBtn.forEach((btn) => {
         clear: "none",
         fontSize: "28px",
         fontWeight: "bold",
+        order: "0",
+        flexGrow:".20"
       };
 
       close.addEventListener("mouseover", () => {
@@ -164,6 +166,7 @@ popUpBtn.forEach((btn) => {
         lineHeight: "44px",
         color: "#172b4d",
         order: "0",
+        flexGrow:"0.80",
         margin: "0",
       };
       Object.assign(title.style, propTitle);
@@ -173,14 +176,13 @@ popUpBtn.forEach((btn) => {
       const propModal = {
         display: "none",
         position: "fixed",
-        zIndex: "99",
+        zIndex: "9999",
         left: "0",
         top: "0",
         width: "100%",
-        maxHeight: "100%",
-        backgroundColor: "rgb(0,0,0)",
+        height: "100%",        
         backgroundColor: "rgba(0,0,0,0.4)",
-        padding: "100px",
+        padding: '100px'
       };
       Object.assign(modal.style, propModal);
       modal.appendChild(container);
@@ -200,24 +202,24 @@ popUpBtn.forEach((btn) => {
         paddingTop: "20px",
         fontFamily: '"Poppins", sans-serif',
         fontStyle: "normal",
-        fontWeight: "600",
+        fontWeight: "200",
         fontSize: "13px",
         lineHeight: "16px",
         flex: "none",
         order: "1",
         flexGrow: "0",
+        color:'#344563'
       };
       Object.assign(roles.style, rolesProperty);
-      roles.innerHTML = projects[parentId].generalInf.join(" &bullet; ");
+      roles.innerHTML = `<b>${projects[parentId].generalInf[0]}</b> &bullet; ${projects[parentId].generalInf.slice(1).join("&nbsp;&bullet;&nbsp;")}`;
       container.appendChild(roles);
 
       const imgContainer = document.createElement("div");
       imgContainerProperty = {
-        width: "98%",
-        height: "80%",
+        height: "70%",
         background: `url(${projects[parentId].img})`,
         backgroundRepeat: "no-repeat",
-        backgroundSize: "98% 80%",
+        backgroundSize: "98% 100%",
         borderRadius: "8px",
         flex: "none",
         order: "2",
@@ -254,7 +256,8 @@ popUpBtn.forEach((btn) => {
         color: "#344563",
         flex: "none",
         order: "0",
-        flexGrow: "0",
+        flexGrow: "0.7",
+        margin:'0'
       };
 
       Object.assign(descContainer.style, descContainerProperty);
@@ -275,7 +278,7 @@ popUpBtn.forEach((btn) => {
         height: "24px",
         flex: "none",
         order: "1",
-        flexGrow: "0",
+        flexGrow: "0.3",
       };
       Object.assign(tagsbtnContainer.style, tagsbtnContainerProperty);
       const tagsContainer = document.createElement("div");
@@ -412,6 +415,7 @@ popUpBtn.forEach((btn) => {
         clear: "none",
         fontSize: "28px",
         fontWeight: "bold",
+        flexGrow:"0.30"
       };
 
       close.addEventListener("mouseover", () => {
@@ -434,6 +438,7 @@ popUpBtn.forEach((btn) => {
         color: "#172b4d",
         order: "0",
         margin: "0",
+        flexGrow:"0.70"
       };
       Object.assign(title.style, propTitle);
       topBar.appendChild(title);
@@ -446,9 +451,10 @@ popUpBtn.forEach((btn) => {
         left: "0",
         top: "0",
         width: "100%",
-        maxHeight: "100%",
+        height: "100%",
         backgroundColor: "rgb(0,0,0)",
         backgroundColor: "rgba(0,0,0,0.4)",
+        padding:'70px'
       };
       Object.assign(modal.style, propModal);
       modal.appendChild(container);
@@ -468,7 +474,7 @@ popUpBtn.forEach((btn) => {
         paddingTop: "20px",
         fontFamily: '"Poppins", sans-serif',
         fontStyle: "normal",
-        fontWeight: "600",
+        fontWeight: "200",
         fontSize: "13px",
         lineHeight: "16px",
         flex: "none",
@@ -476,7 +482,7 @@ popUpBtn.forEach((btn) => {
         flexGrow: "0",
       };
       Object.assign(roles.style, rolesProperty);
-      roles.innerHTML = projects[parentId].generalInf.join(" &bullet; ");
+      roles.innerHTML = `<b>${projects[parentId].generalInf[0]}</b> &bullet; ${projects[parentId].generalInf.slice(1).join("&nbsp;&bullet;&nbsp;")}`;
       container.appendChild(roles);
 
       const imgContainer = document.createElement("div");
