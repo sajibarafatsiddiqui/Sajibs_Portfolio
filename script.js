@@ -647,3 +647,29 @@ form.addEventListener('submit',(event)=>{
   }
  
 })
+
+const username =form.elements.username.value;
+const email = form.elements.email.value;
+const message=form.elements.message.value;
+
+const populateLocalStorage = ()=>{
+  const data = {};
+  data.username=username;
+  data.email= email;
+  data.message =message;
+  console.log('localstorage')
+  localStorage.setItem('data',JSON.stringify(data));
+} 
+
+const parseLocalStorage = ()=>{
+  const data=JSON.parse(localStorage.getItem('data'));
+  form.elements.username.value= data.username;
+  form.elements.email.value=data.email;
+  form.elements.message=data.message;
+}
+
+localStorage.getItem('data')?parseLocalStorage():populateLocalStorage();
+
+username.onChange =populateLocalStorage();
+email.onChange=populateLocalStorage();
+message.onChange=populateLocalStorage();
