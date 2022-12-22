@@ -618,3 +618,30 @@ popUpBtn.forEach((btn) => {
     }
   });
 });
+
+const isLowerCase = (email)=>{
+   const emailAddr = email.trim();
+  return (emailAddr === emailAddr.toLowerCase)? true:false;
+}
+
+const showMessage =()=>{
+  const errElt = document.querySelector('small')
+  errElt.innerHTML="The email address need to be lowercase"
+}
+
+const validateEmail =(email)=>{
+  if(!isLowerCase(email)){
+    showMessage();
+    return false;
+  }
+  return true;
+}
+const form = document.querySelector('form')
+form.addEventListener('submit',(event)=>{
+ // e.preventDefault();
+  const emailAddress=form.elements.email.value;
+  if (!validateEmail(emailAddress)){
+       event.preventDefault();
+  }
+ 
+})

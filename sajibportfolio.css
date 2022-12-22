@@ -1182,6 +1182,13 @@ textarea::placeholder {
   height: 150px;
 }
 
+small {
+  font-family: Poppins, sans-serif;
+  color: rgb(224, 33, 33);
+  font-size: 13px;
+  font-weight: 600;
+}
+
 button {
   font-family: 'Inter', sans-serif;
   font-style: normal;
@@ -1706,5 +1713,12 @@ button:hover {
 
   .mobile_menu {
     display: none;
+  }
+
+  small {
+    font-family: Poppins, sans-serif;
+    color: rgb(224, 33, 33);
+    font-size: 13px;
+    font-weight: 600;
   }
 }
