@@ -621,7 +621,8 @@ popUpBtn.forEach((btn) => {
 
 const isLowerCase = (email)=>{
    const emailAddr = email.trim();
-  return (emailAddr === emailAddr.toLowerCase)? true:false;
+   console.log(emailAddr.toLowerCase())
+  return (emailAddr === emailAddr.toLowerCase())? true : false;
 }
 
 const showMessage =()=>{
@@ -630,6 +631,7 @@ const showMessage =()=>{
 }
 
 const validateEmail =(email)=>{
+  console.log(isLowerCase(email))
   if(!isLowerCase(email)){
     showMessage();
     return false;
