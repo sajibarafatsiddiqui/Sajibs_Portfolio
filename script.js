@@ -626,8 +626,8 @@ const isLowerCase = (email)=>{
 }
 
 const showMessage =()=>{
-  const errElt = document.querySelector('small')
-  errElt.innerHTML="The email address need to be lowercase"
+  const errElt = document.querySelector('small');
+  errElt.innerHTML="Please enter the email address all in lowercase";
 }
 
 const validateEmail =(email)=>{
@@ -638,7 +638,7 @@ const validateEmail =(email)=>{
   }
   return true;
 }
-const form = document.querySelector('form')
+const form = document.querySelector('form');
 form.addEventListener('submit',(event)=>{
  // e.preventDefault();
   const emailAddress=form.elements.email.value;
