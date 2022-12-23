@@ -626,8 +626,8 @@ const isLowerCase = (email)=>{
 }
 
 const showMessage =()=>{
-  const errElt = document.querySelector('small')
-  errElt.innerHTML="The email address need to be lowercase"
+  const errElt = document.querySelector('small');
+  errElt.innerHTML="Please enter the email address all in lowercase";
 }
 
 const validateEmail =(email)=>{
@@ -638,7 +638,7 @@ const validateEmail =(email)=>{
   }
   return true;
 }
-const form = document.querySelector('form')
+const form = document.querySelector('form');
 form.addEventListener('submit',(event)=>{
  // e.preventDefault();
   const emailAddress=form.elements.email.value;
@@ -647,3 +647,35 @@ form.addEventListener('submit',(event)=>{
   }
  
 })
+
+const username =form.elements.username.value;
+const email = form.elements.email.value;
+const message=form.elements.message.value;
+
+/* save form data */
+const userName = form.elements.username;
+const userEmail = form.elements.email;
+const userMessage = form.elements.message;
+function populateStorage() {
+  const userInput = {
+    name: form.elements.username.value,
+    email: form.elements.email.value,
+    message: form.elements.message.value,
+  };
+  localStorage.setItem('userInput', JSON.stringify(userInput));
+}
+function setForm() {
+  const storedInput = JSON.parse(localStorage.getItem('userInput'));
+  const currentUserName = storedInput.name;
+  const currentUserEmail = storedInput.email;
+  const currentMessage = storedInput.message;
+ 
+  form.elements.username.value = currentUserName;
+  form.elements.email.value = currentUserEmail;
+  form.elements.message.value = currentMessage;
+}
+!localStorage.getItem('userInput')? populateStorage():setForm();
+
+userName.onchange = populateStorage;
+userEmail.onchange = populateStorage;
+userMessage.onchange = populateStorage;
