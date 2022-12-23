@@ -652,24 +652,30 @@ const username =form.elements.username.value;
 const email = form.elements.email.value;
 const message=form.elements.message.value;
 
-const populateLocalStorage = ()=>{
-  const data = {};
-  data.username=username;
-  data.email= email;
-  data.message =message;
-  console.log('localstorage')
-  localStorage.setItem('data',JSON.stringify(data));
-} 
-
-const parseLocalStorage = ()=>{
-  const data=JSON.parse(localStorage.getItem('data'));
-  form.elements.username.value= data.username;
-  form.elements.email.value=data.email;
-  form.elements.message=data.message;
+/* save form data */
+const userName = form.elements.username;
+const userEmail = form.elements.email;
+const userMessage = form.elements.message;
+function populateStorage() {
+  const userInput = {
+    name: form.elements.username.value,
+    email: form.elements.email.value,
+    message: form.elements.message.value,
+  };
+  localStorage.setItem('userInput', JSON.stringify(userInput));
 }
+function setForm() {
+  const storedInput = JSON.parse(localStorage.getItem('userInput'));
+  const currentUserName = storedInput.name;
+  const currentUserEmail = storedInput.email;
+  const currentMessage = storedInput.message;
+ 
+  form.elements.username.value = currentUserName;
+  form.elements.email.value = currentUserEmail;
+  form.elements.message.value = currentMessage;
+}
+!localStorage.getItem('userInput')? populateStorage():setForm();
 
-localStorage.getItem('data')?parseLocalStorage():populateLocalStorage();
-
-username.onChange =populateLocalStorage();
-email.onChange=populateLocalStorage();
-message.onChange=populateLocalStorage();
+userName.onchange = populateStorage;
+userEmail.onchange = populateStorage;
+userMessage.onchange = populateStorage;
