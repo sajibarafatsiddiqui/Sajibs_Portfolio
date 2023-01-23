@@ -49,7 +49,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://sajibarafatsiddiqui.github.io/Finish_Mobile_Version_Portfolio/))
+- [Live Demo Link](https://sajibarafatsiddiqui.github.io/Sajibs_Portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
